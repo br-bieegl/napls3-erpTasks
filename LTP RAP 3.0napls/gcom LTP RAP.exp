@@ -32,6 +32,19 @@
 <dxv>6</dxv>
 <efs>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\audiometer.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\vis LTP Instructions rev.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvAg.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvBg.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFShorz.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFSvert.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\rovMMNpractice.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNa.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNb.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNc.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNd.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNe.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvCg.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvDg.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\vis LTP Instructions.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r2hvA.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r2hvB.sce</filename>
@@ -41,7 +54,6 @@
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\mVHFSvert.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 2.0\cVHFShorz.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 2.0\cVHFSvert.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\rovMMNpractice.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\comMMNa.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\comMMNb.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\comMMNc.sce</filename>
@@ -84,18 +96,8 @@
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP\anD.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP\anE.sce</filename>
 <filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP\anF.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNa.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNb.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNc.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNd.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gcomMMNe.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvAg.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvBg.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFShorz.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFSvert.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvCg.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\r3hvDg.sce</filename>
-<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\vis LTP Instructions rev.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFS.sce</filename>
+<filename>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gHHFS.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <experiment_id></experiment_id>
@@ -564,7 +566,7 @@
 <idn>MotioninJoy Virtual Game Controller</idn>
 <offset>55</offset>
 </idv>
-<sfn>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFShorz.sce</sfn>
+<sfn>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFS.sce</sfn>
 </sce>
 <sce>
 <idv>
@@ -581,7 +583,7 @@
 <idn>MotioninJoy Virtual Game Controller</idn>
 <offset>55</offset>
 </idv>
-<sfn>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gVHFSvert.sce</sfn>
+<sfn>C:\Program Files\Neurobehavioral Systems\Presentation\LTP RAP 3.0\gHHFS.sce</sfn>
 </sce>
 <sce>
 <frc>
