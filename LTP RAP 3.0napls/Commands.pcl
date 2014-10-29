@@ -1,0 +1,39 @@
+#######################################################################
+###########                    PCL FILE                     ###########
+#######################################################################
+
+# define an output port manager and assigns it to the first port
+#output_port oport = output_port_manager.get_port( 1 );
+#oport.set_pulse_width( 20 );
+parameter_window.remove_all();
+instruction.present();
+
+loop
+   int n = 1
+until
+   n > 1
+begin
+# loops through stimuli defined in the scenario file (i=#of trials per stimuli)
+loop
+	int i = 1
+until
+	i > trials.count()
+begin
+	trials[i].present();
+	# sends a different trigger value depending on whether the response
+	# was correct, incorrect, or missing (perhaps change missing to an
+	# else statement to catch anything else, not just misses?)
+	##if (response_manager.hits() == 1) then
+	 ##  oport.send_code( 1 );   
+	##elseif (response_manager.incorrects() == 1) then
+	  ## oport.send_code( 2 );
+	##elseif (response_manager.misses() == 1) then
+	  ## oport.send_code( 3 );       
+	##end;
+ # /* if i == 200 then
+  #    a_break.present();   
+   #end; */  
+	i = i + 1
+end;  
+   n = n + 1
+end  

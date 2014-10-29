@@ -1,0 +1,62 @@
+   #Variables passed in from the scenario file:
+   #pic	      
+   #word
+   #picPort
+   #wordPort	
+   #targResp	
+   #picTime	
+   #wrdTime
+   #snd1	
+   #s1Port	
+   #snd2	
+   #s2Port	
+   #snd3	
+   #s3Port	
+   #snd4	
+   #s4Port	
+   #snd5	
+   #s5Port	
+   #snd6	
+   #s6Port;
+    
+   trial {
+      
+      trial_duration = 1600;
+         
+      #picture {   
+      #bitmap { filename = "$pic.pcx"; 
+      #width = 1024;
+      #height = 768;};            
+      #x = 0; y = 0; };
+      
+		force_feedback {
+			constant_force $pic;
+			# force_feedback_start by default
+		};
+		target_button = $targResp;
+      code = "$pic";
+      port_code = $picPort;
+      duration = 496;
+      time = $picTime;
+  
+      sound $snd1;  
+      time = 0;          
+      code = "$snd1";
+      port_code = $s1Port;   
+      
+      sound $snd2;  
+      time = 400;          
+      code = "$snd2";
+      port_code = $s2Port;  
+      
+      sound $snd3;  
+      time = 800;          
+      code = "$snd3";
+      port_code = $s3Port;   
+      
+      sound $snd4;  
+      time = 1200;          
+      code = "$snd4";
+      port_code = $s4Port;     
+   };
+   

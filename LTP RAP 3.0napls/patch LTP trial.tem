@@ -1,0 +1,67 @@
+#######################################################################
+###########                 TRIAL TEMPLATE                  ###########
+#######################################################################
+
+# this sets the central fixation cross before the experiment
+#/*
+#trial {
+   #start_delay = 100; # delays the start of the trial until 100ms after
+                      # the last trial has ended
+#   trial_duration = stimuli_length; # trial lasts as long as stimulus
+   
+#   picture {
+#      text {caption = "+";}; # fixation cross
+#      x = 0; y = 0; # centre of screen
+#   };
+#   time = 0; # time when stimulus is presented
+#   duration = 1000;
+#};   
+#*/  
+
+# this presents the stimulus sent to it from the scenario file
+trial {
+	trial_duration = $SOA;
+
+	picture $the_picture; # picture to present; sent from scenario file
+		
+	time = 0;
+	duration = 27; #495;
+	code = $the_code; # stimulus name; sent from scenario file
+	port_code = $trigger_value; #trigger value; sent from scenario file      
+	response_active = $foo;
+	
+};                                                                                                                  
+
+# this deals with the response
+##trial {
+   ##trial_duration = 1000;
+   ##trial_type = first_response; # trial ends when response is made or
+                                # duration elapses   
+   
+   ##picture {
+	   ##text {caption = "Please respond now";};
+	   ##x = 0; y = 0;
+	##};
+	##time = 0;
+	##duration = response; # stimuli lasts until a response is made or
+	                     # duration elapses
+	##code = "response";
+	##target_button = $correct_resp; # the correct button to press; sent
+	                               # from scenario file
+	##stimulus_time_in = 150; # reponses allowed after 150ms...
+	##stimulus_time_out = never; # ...until end of trial
+##};	
+
+#trial {
+   #start_delay = 100; # delays the start of the trial until 100ms after
+                      # the last trial has ended
+#   trial_duration = stimuli_length; # trial lasts as long as stimulus
+   
+#   picture {
+#      text {caption = "+";}; # fixation cross
+#      x = 0; y = 0; # centre of screen
+#   };
+#   time = 0; # time when stimulus is presented
+#   duration = $isi;
+#}; 
+

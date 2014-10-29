@@ -1,0 +1,122 @@
+parameter_window.remove_all();
+
+
+array <int> targs[6][1];
+array <string> names[6][1];
+array <double> attens[19][1];
+
+names[	1	] = {	"1"	}; #lft1000
+names[	2	] = {	"2"	}; #rht1000
+
+names[	3	] = {	"3"	}; #left633
+names[	4	] = {	"4"	}; #rght633
+
+names[	5	] = {	"5"	}; #left500
+names[	6	] = {	"6"	}; #rght500
+
+targs[1] = { 1 };
+targs[2] = { 2 };
+targs[3] = { 1 };
+targs[4] = { 2 };
+targs[5] = { 1 };
+targs[6] = { 2 };
+
+attens [	1	] = {	0.9	};
+attens [	2	] = {	0.85	};
+attens [	3	] = {	0.8	};
+attens [	4	] = {	0.75	};
+attens [	5	] = {	0.7	};
+attens [	6	] = {	0.65	};
+attens [	7	] = {	0.6	};
+attens [	8	] = {	0.55	};
+attens [	9	] = {	0.5	};
+attens [	10	] = {	0.45	};
+attens [	11	] = {	0.4	};
+attens [	12	] = {	0.35	};
+attens [	13	] = {	0.3	};
+attens [	14	] = {	0.25	};
+attens [	15	] = {	0.2	};
+attens [	16	] = {	0.15	};
+attens [	17	] = {	0.1	};
+attens [	18	] = {	0.05	};
+attens [	19	] = {	0.0	};
+
+
+instructionR.present(); 
+#instructionL.present(); 
+greatJob.present();
+
+int t_hits = 2;
+bool done = false;
+int numHits = 3;
+string myCode = "a";
+string myAtten= "foo";
+
+loop
+	int a = 1;
+	int s = 2;
+until
+	done == true
+begin
+	if (s>7) then
+		done = true;
+	elseif (response_manager.total_hits() > t_hits) then
+		t_hits = t_hits + 1;
+		if numHits > 0 then
+			numHits = numHits - 1;
+			if (a>4) then
+				a = a - 4;
+			else
+				a = 1;
+			end;
+			#do sound trial
+			myCode = names[s][1];
+			myAtten= string(attens[a][1]);
+			myCode.append(myAtten);
+			sound_event.set_event_code(myCode);
+			sound_event.set_stimulus(snds[s]);
+			sound_event.set_target_button(targs[s][1]);
+			snds[s].set_attenuation(attens[a][1]);
+			soundTrial.present();
+			##end of sound trial stuff##
+		else
+			numHits = 3;
+			a = 1;
+			s = s+2;
+			#do sound trial
+			#myCode = names[s][1];
+			#myAtten= string(attens[a][1]);
+			#myCode.append(myAtten);
+			#sound_event.set_event_code(myCode);
+			#sound_event.set_stimulus(snds[s]);
+			#sound_event.set_target_button(targs[s][1]);
+			#snds[s].set_attenuation(attens[a][1]);
+			#soundTrial.present();
+			##end of sound trial stuff##
+		end;
+	else
+		if (a < 19) then
+			a = a+1;
+		end;
+		
+		#do sound trial
+		myCode = names[s][1];
+		myAtten= string(attens[a][1]);
+		myCode.append(myAtten);
+		sound_event.set_event_code(myCode);
+		sound_event.set_stimulus(snds[s]);
+		sound_event.set_target_button(targs[s][1]);
+		snds[s].set_attenuation(attens[a][1]);
+		soundTrial.present();
+		##end of sound trial stuff##
+	end;
+	
+	#wait_interval(800);
+	
+end;
+
+instructionDone.present();
+			
+	
+	
+	
