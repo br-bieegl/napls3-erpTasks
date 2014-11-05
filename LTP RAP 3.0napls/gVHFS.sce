@@ -275,14 +275,14 @@ begin
 			trial_tn.set_duration(tdur);
 			trial_tn.present();
 			i0 = 1;
-			if j < 22 then
+			if j < 11 then
 				j = j + 1;
 			end;
 		else #inverted
 			trial_ti.set_duration(tdur);
 			trial_ti.present();
 			i0 = 0;
-			if j < 22 then
+			if j < 11 then
 				j = j + 1;
 			end;
 		end;
