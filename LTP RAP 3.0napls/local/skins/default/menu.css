@@ -1,0 +1,22 @@
+#topmenubutton {
+    border: 0;
+    border-bottom-style: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    height: 35px;
+    width: auto;
+    font-size: 14px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    display:block;
+    float:left;
+    padding: 10px 5px;
+}
+
+#topmenubutton:hover {
+    cursor: pointer;
+    background-image: url("../../skins/default/images/topnav_hover.gif");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-color: transparent;
+}

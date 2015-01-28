@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en"><!-- Source is http://gametool.motioninjoy.com/install/Xbox_emulator/l_en -->
+    <head>
+        <meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv='content-language' content="en" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <meta name="resource-type" content="document" />
+        <meta name="distribution" content="global" />
+        <meta name="copyright" content="2009 MotioninJoy Group" />
+        <meta name="keywords" content="bluetooth adapter,gamepad"/>
+        <meta name="description" content="how to install game pad driver"/>
+        <!--<base href="http://gametool.motioninjoy.com/">-->
+        <title>MotioninJoy Xbox 360 emulator guid</title>
+        <link href="" rel="stylesheet" type="text/css" />
+        <link type="text/css" href="install_xbox_files/jquery-ui.css" rel="stylesheet" />
+        <script type="text/javascript" src="install_xbox_files/jquery"></script>
+        <script type="text/javascript" src="install_xbox_files/v005"></script>
+        <script type="text/javascript" src="install_xbox_files/v001"></script>
+        <link type="text/css" href="install_xbox_files/styles-0.0.7.css" rel="stylesheet" />
+        <link type="text/css" href="../../skins/default/menu.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="masthead">
+                <ul class="topnav">
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './index.html'">Start</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './profile.html'">Profiles</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './install_xbox.html'">Install</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './bluetooth.html'">Bluetooth</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './options.html'">Options</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './about.html'">About</button></li>
+                </ul>
+            </div>
+
+            <div id="DriverManager" class="Panel">
+                <div id="caption"><h1>Driver manager</h1><button id="reload" style="width:120px; float:right;" onClick="window.location.reload()">Reload this page</button><button style="width:100px; float:right;" onclick="javascript:window.location = './install.html'">Switch to old</button></div>
+                <div style="margin:0;padding:0;color: #00529B;background-color: #BDE5F8; width:100%;font-size:12px;">
+                    <ol style="border: 1px solid;padding:5px 5px 5px 70px;background-repeat: no-repeat;background-position: 10px center;background-image: url('install_xbox_files/Attention.png');color: #00529B;background-color: #BDE5F8;">
+                        <li><strong><a href="http://forums.motioninjoy.com/viewtopic.php?f=3&t=1186" target="_blank">Click here to view Tutorial Video</a></strong></li>
+                        <li><strong><a href="http://www.gameaccy.com/bluetooth-dongle-for-motioninjoy" target="_blank">Get a Compatible Bluetooth Adapter(Recommended)</a></strong><a href="http://www.motioninjoy.com/wiki/en/faq#bluetooth" target="_blank"><img src="install_xbox_files/question_mark_over.gif" border="0" /></a></li>
+                        <li>Plug in your PLAY STATION 3 controller(s) and USB Bluetooth Adapter(s).</li>
+                        <li>Check the device(s) for loading MotiooninJoy driver.</li>
+                        <li>Click Load button.</li>
+                    </ol>
+                </div>
+                <div style="clear:both; max-height:75px; overflow:auto; ">
+                    <div id="installDeviceList">
+                        <table id="InstallTable" cellspacing="0" width="100%" >
+                            <colgroup>
+                                <col id=""/>
+                                <col id=""/>
+                                <col id=""/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th width="10%"></th>
+                                    <th width="35%" style="text-align:left;">Hardware Location </th>
+                                    <th width="35%" style="text-align:left;">Hardware ID</th>
+                                    <th width="20%" style="text-align:left;">MotioninJoy</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <noscript>
+                    <div style="font: bold 16px Arial; color:#F8F8FF; background: maroon;">
+                        <p >You will need to enable Javascript if you have it disabled.</p>
+                        <p><a href="http://www.motioninjoy.com/wiki/en/help/help/enable-javascript" target="_blank">How do I enable JavaScript in Internet Explorer<img src="install_xbox_files/question_mark_over.gif" border="0" /></a></p>
+                    </div>
+                </noscript>
+                <button id="LoadDriver" style="width:100px;">Load Driver</button>
+                <button id="Rollback" style="width:100px;">Roll Back</button>
+                <button id="Refresh" style="width:100px;">Refresh</button>
+                <button id="InstllDriver" title="This button will overwrite your current Bluetooth Dongle driver!" style="width:100px;">Install All</button>
+                <button id="GamepadProperty" style="width:160px;">Game Controller Panel</button>
+                <button id="DeviceManager" style="width:160px;">Device Manager</button>
+
+                <div style=" clear:left;margin:0 auto; height:320px;overflow:auto; ">
+                    <div id="installlog" style="font-size:10px;"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

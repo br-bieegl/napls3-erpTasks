@@ -1,0 +1,304 @@
+$(document).ready(MJ_init);
+function MJ_init(){
+    common();
+    $.spin.imageBasePath='./options_files/';
+    $('#DeadzoneDefault').spin({
+        interval:1,
+        min:0,
+        max:255
+    });
+    $('#ThresholdDefault').spin({
+        interval:1,
+        min:0,
+        max:255
+    });
+    $("#Deadzone > div").each(function(){
+        $(this).slider({
+            animate:true,
+            range:"min",
+            min:0,
+            max:127,
+            value:12,
+            change:function(event,ui){
+                $(".DeadzoneValue",this).text($(this).slider('option','value'))
+                }
+            });
+    $(".DeadzoneValue",this).text($(this).slider('option','value'))
+        });
+$("#Threshold > div").each(function(){
+    $(this).slider({
+        animate:true,
+        range:"min",
+        min:0,
+        max:255,
+        value:64,
+        change:function(event,ui){
+            $(".DeadzoneValue",this).text($(this).slider('option','value'))
+            }
+        });
+$(".DeadzoneValue",this).text($(this).slider('option','value'))
+    });
+$('#OptionsDefault').click(function(){
+    $("#Deadzone > div").each(function(){
+        $(this).slider("option","value",$('#DeadzoneDefault').val())
+        });
+    $("#Threshold > div").each(function(){
+        $(this).slider("option","value",$('#ThresholdDefault').val())
+        })
+    });
+if(VersionTool>0){
+    if(VersionTool>0x060000){
+        $('#OptionsEnable').click(function(){
+            setAppOption(0,$("#AutoRun").attr("checked"));
+            setAppOption(1,$("#AutoUpdate").attr("checked"));
+            setAppOption(2,$("#CloseExit").attr("checked"));
+            setDeadZonOption(0,$('#LStick-X').slider('option','value'));
+            setDeadZonOption(1,$('#LStick-Y').slider('option','value'));
+            setDeadZonOption(2,$('#RStick-X').slider('option','value'));
+            setDeadZonOption(3,$('#RStick-Y').slider('option','value'));
+            setDeadZonOption(4,$('#Triangle').slider('option','value'));
+            setDeadZonOption(5,$('#Circle').slider('option','value'));
+            setDeadZonOption(6,$('#Cross').slider('option','value'));
+            setDeadZonOption(7,$('#Square').slider('option','value'));
+            setDeadZonOption(8,$('#L2').slider('option','value'));
+            setDeadZonOption(9,$('#R2').slider('option','value'));
+            setDeadZonOption(10,$('#L1').slider('option','value'));
+            setDeadZonOption(11,$('#R1').slider('option','value'));
+            setDeadZonOption(12,$('#DpadUp').slider('option','value'));
+            setDeadZonOption(13,$('#DpadRight').slider('option','value'));
+            setDeadZonOption(14,$('#DpadDown').slider('option','value'));
+            setDeadZonOption(15,$('#DpadLeft').slider('option','value'));
+            mmm()
+            });
+        if(GetAppOption(0)=="True"){
+            $("#AutoRun").attr("checked","checked")
+            }
+            if(GetAppOption(1)=="True"){
+            $("#AutoUpdate").attr("checked","checked")
+            }
+            if(GetAppOption(2)=="True"){
+            $("#CloseExit").attr("checked","checked")
+            }
+            $('#LStick-X').slider('option','value',GetDeadZonOption(0));
+        $('#LStick-Y').slider('option','value',GetDeadZonOption(1));
+        $('#RStick-X').slider('option','value',GetDeadZonOption(2));
+        $('#RStick-Y').slider('option','value',GetDeadZonOption(3));
+        $('#Triangle').slider('option','value',GetDeadZonOption(4));
+        $('#Circle').slider('option','value',GetDeadZonOption(5));
+        $('#Cross').slider('option','value',GetDeadZonOption(6));
+        $('#Square').slider('option','value',GetDeadZonOption(7));
+        $('#L2').slider('option','value',GetDeadZonOption(8));
+        $('#R2').slider('option','value',GetDeadZonOption(9));
+        $('#L1').slider('option','value',GetDeadZonOption(10));
+        $('#R1').slider('option','value',GetDeadZonOption(11));
+        $('#DpadUp').slider('option','value',GetDeadZonOption(12));
+        $('#DpadRight').slider('option','value',GetDeadZonOption(13));
+        $('#DpadDown').slider('option','value',GetDeadZonOption(14));
+        $('#DpadLeft').slider('option','value',GetDeadZonOption(15))
+        }else if(VersionTool>=0x050000){
+        if(window.external.configDevice(10,0,1,0,0,0)){
+            $("#AutoRun").attr("checked","checked")
+            }
+            if(window.external.configDevice(10,0,1,1,0,0)){
+            $("#AutoUpdate").attr("checked","checked")
+            }
+            if(window.external.configDevice(10,0,1,2,0,0)){
+            $("#CloseExit").attr("checked","checked")
+            }
+            window.external.configDevice(1,0,6,0,0,0);
+        $('#OptionsEnable').click(function(){
+            Mconfig();
+            window.external.configDevice(10,0,0,0,$("#AutoRun").attr("checked"),0);
+            window.external.configDevice(10,0,0,1,$("#AutoUpdate").attr("checked"),0);
+            window.external.configDevice(10,0,0,2,$("#CloseExit").attr("checked"),0);
+            if(VersionTool>=0x060000){
+                window.external.configDevice(10,0,0,3,$('#LStick-X').slider('option','value'),0);
+                window.external.configDevice(10,0,0,4,$('#LStick-Y').slider('option','value'),0);
+                window.external.configDevice(10,0,0,5,$('#RStick-X').slider('option','value'),0);
+                window.external.configDevice(10,0,0,6,$('#RStick-Y').slider('option','value'),0);
+                window.external.configDevice(10,0,0,7,$('#Triangle').slider('option','value'),0);
+                window.external.configDevice(10,0,0,8,$('#Circle').slider('option','value'),0);
+                window.external.configDevice(10,0,0,9,$('#Cross').slider('option','value'),0);
+                window.external.configDevice(10,0,0,10,$('#Square').slider('option','value'),0);
+                window.external.configDevice(10,0,0,11,$('#L2').slider('option','value'),0);
+                window.external.configDevice(10,0,0,12,$('#R2').slider('option','value'),0);
+                window.external.configDevice(10,0,0,13,$('#L1').slider('option','value'),0);
+                window.external.configDevice(10,0,0,14,$('#R1').slider('option','value'),0);
+                window.external.configDevice(10,0,0,15,$('#DpadUp').slider('option','value'),0);
+                window.external.configDevice(10,0,0,16,$('#DpadRight').slider('option','value'),0);
+                window.external.configDevice(10,0,0,17,$('#DpadDown').slider('option','value'),0);
+                window.external.configDevice(10,0,0,18,$('#DpadLeft').slider('option','value'),0)
+                }
+            })
+    }else{
+    $('#OptionsEnable').click(function(){
+        alert('Need DS3 tool ver 0.5+')
+        })
+    }
+}
+}
+function setConfig(){
+    if(arguments.length>1){
+        switch(arguments[0]){
+            case 6:
+                $('#LStick-X').slider('option','value',arguments[1]);
+                $('#LStick-Y').slider('option','value',arguments[2]);
+                $('#RStick-X').slider('option','value',arguments[3]);
+                $('#RStick-Y').slider('option','value',arguments[4]);
+                $('#Triangle').slider('option','value',arguments[5]);
+                $('#Circle').slider('option','value',arguments[6]);
+                $('#Cross').slider('option','value',arguments[7]);
+                $('#Square').slider('option','value',arguments[8]);
+                $('#L2').slider('option','value',arguments[9]);
+                $('#R2').slider('option','value',arguments[10]);
+                $('#L1').slider('option','value',arguments[11]);
+                $('#R1').slider('option','value',arguments[12]);
+                $('#DpadUp').slider('option','value',arguments[13]);
+                $('#DpadRight').slider('option','value',arguments[14]);
+                $('#DpadDown').slider('option','value',arguments[15]);
+                $('#DpadLeft').slider('option','value',arguments[16]);
+                break;
+            default:
+                break
+                }
+            }
+}(function($){
+    var calcFloat={
+        get:function(num){
+            var num=num.toString();
+            if(num.indexOf('.')==-1)return[0,eval(num)];
+            var nn=num.split('.');
+            var po=nn[1].length;
+            var st=nn.join('');
+            var sign='';
+            if(st.charAt(0)=='-'){
+                st=st.substr(1);
+                sign='-'
+                }
+                for(var i=0;i<st.length;++i)if(st.charAt(0)=='0')st=st.substr(1,st.length);
+            st=sign+st;
+            return[po,eval(st)]
+            },
+        getInt:function(num,figure){
+            var d=Math.pow(10,figure);
+            var n=this.get(num);
+            var v1=eval('num * d');
+            var v2=eval('n[1] * d');
+            if(this.get(v1)[1]==v2)return v1;
+            return(n[0]==0?v1:eval(v2+'/Math.pow(10, n[0])'))
+            },
+        sum:function(v1,v2){
+            var n1=this.get(v1);
+            var n2=this.get(v2);
+            var figure=(n1[0]>n2[0]?n1[0]:n2[0]);
+            v1=this.getInt(v1,figure);
+            v2=this.getInt(v2,figure);
+            return eval('v1 + v2')/Math.pow(10,figure)
+            }
+        };
+$.extend({
+    spin:{
+        imageBasePath:'./options_files/',
+        spinBtnImage:'spin-button.png',
+        spinUpImage:'spin-up.png',
+        spinDownImage:'spin-down.png',
+        interval:1,
+        max:null,
+        min:null,
+        timeInterval:500,
+        timeBlink:200,
+        btnClass:null,
+        btnCss:{
+            cursor:'pointer',
+            padding:0,
+            margin:0,
+            verticalAlign:'middle'
+        },
+        txtCss:{
+            marginRight:0,
+            paddingRight:0
+        },
+        lock:false,
+        decimal:null,
+        beforeChange:null,
+        changed:null,
+        buttonUp:null,
+        buttonDown:null
+    }
+});
+$.fn.extend({
+    spin:function(o){
+        return this.each(function(){
+            o=o||{};
+            var opt={};
+            $.each($.spin,function(k,v){
+                opt[k]=(typeof o[k]!='undefined'?o[k]:v)
+                });
+            var txt=$(this);
+            var spinBtnImage=opt.imageBasePath+opt.spinBtnImage;
+            var btnSpin=new Image();
+            btnSpin.src=spinBtnImage;
+            var spinUpImage=opt.imageBasePath+opt.spinUpImage;
+            var btnSpinUp=new Image();
+            btnSpinUp.src=spinUpImage;
+            var spinDownImage=opt.imageBasePath+opt.spinDownImage;
+            var btnSpinDown=new Image();
+            btnSpinDown.src=spinDownImage;
+            var btn=$(document.createElement('img'));
+            btn.attr('src',spinBtnImage);
+            if(opt.btnClass)btn.addClass(opt.btnClass);
+            if(opt.btnCss)btn.css(opt.btnCss);
+            if(opt.txtCss)txt.css(opt.txtCss);
+            txt.after(btn);
+            if(opt.lock){
+                txt.focus(function(){
+                    txt.blur()
+                    })
+                }
+                function spin(vector){
+                var val=txt.val();
+                var org_val=val;
+                if(opt.decimal)val=val.replace(opt.decimal,'.');
+                if(!isNaN(val)){
+                    val=calcFloat.sum(val,vector*opt.interval);
+                    if(opt.min!==null&&val<opt.min)val=opt.min;
+                    if(opt.max!==null&&val>opt.max)val=opt.max;
+                    if(val!=txt.val()){
+                        if(opt.decimal)val=val.toString().replace('.',opt.decimal);
+                        var ret=($.isFunction(opt.beforeChange)?opt.beforeChange.apply(txt,[val,org_val]):true);
+                        if(ret!==false){
+                            txt.val(val);
+                            if($.isFunction(opt.changed))opt.changed.apply(txt,[val]);
+                            txt.change();
+                            src=(vector>0?spinUpImage:spinDownImage);
+                            btn.attr('src',src);
+                            if(opt.timeBlink<opt.timeInterval)setTimeout(function(){
+                                btn.attr('src',spinBtnImage)
+                                },opt.timeBlink)
+                            }
+                            }
+                }
+            if(vector>0){
+            if($.isFunction(opt.buttonUp))opt.buttonUp.apply(txt,[val])
+                }else{
+            if($.isFunction(opt.buttonDown))opt.buttonDown.apply(txt,[val])
+                }
+            }
+        btn.mousedown(function(e){
+        var pos=e.pageY-btn.offset().top;
+        var vector=(btn.height()/2>pos?1:-1);
+        (function(){
+            spin(vector);
+            var tk=setTimeout(arguments.callee,opt.timeInterval);
+            $(document).one('mouseup',function(){
+                clearTimeout(tk);
+                btn.attr('src',spinBtnImage)
+                })
+            })();
+        return false
+        })
+    })
+}
+})
+})(jQuery);
+

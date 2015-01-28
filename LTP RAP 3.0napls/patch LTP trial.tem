@@ -25,7 +25,7 @@ trial {
 	picture $the_picture; # picture to present; sent from scenario file
 		
 	time = 0;
-	duration = 27; #495;
+	duration = $offst; #27; #495;
 	code = $the_code; # stimulus name; sent from scenario file
 	port_code = $trigger_value; #trigger value; sent from scenario file      
 	response_active = $foo;

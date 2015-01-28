@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en"><!-- Source is http://gametool.motioninjoy.com/profile/index/l_en -->
+    <head>
+        <meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv='content-language' content="en" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <meta name="resource-type" content="document"/>
+        <meta name="distribution" content="global" />
+        <meta name="copyright" content="2009 MotioninJoy Group" />
+        <meta name="keywords" content="game profile,gamepad"/>
+        <meta name="description" content="edit game profile"/>
+        <!--<base href="http://gametool.motioninjoy.com/">-->
+        <title>MotioninJoy profile editor</title>
+        <link href="" rel="stylesheet" type="text/css" />
+        <link type="text/css" href="profile_files/jquery-ui.css" rel="stylesheet" />
+        <script type="text/javascript" src="profile_files/jquery"></script>
+        <script type="text/javascript" src="profile_files/v005"></script>
+        <script type="text/javascript" src="profile_files/v003"></script>
+        <link type="text/css" href="profile_files/styles-0.0.7.css" rel="stylesheet" />
+        <link type="text/css" href="../../skins/default/menu.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="masthead">
+                <ul class="topnav">
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './index.html'">Start</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './profile.html'">Profiles</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './install_xbox.html'">Install</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './bluetooth.html'">Bluetooth</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './options.html'">Options</button></li>
+                    <li><button id="topmenubutton" onclick="javascript:window.location = './about.html'">About</button></li>
+                </ul>
+            </div>
+            <div id="ProfileEditor" class="Panel">
+                <div id="caption"><h1>Profile Editor</h1><button id="reload" style="width:120px; float:right;" onClick="window.location.reload()">Reload this page</button></div>
+                <div id="ProfileConfig">
+                    <div class="EditorTable" style="margin: 0 auto; width: 100%;">
+                        <table cellspacing="0" id="ProfileEditor" style="width: 762px;">
+                            <colgroup>
+                                <col id=""/>
+                                <col id=""/>
+                                <col id=""/>
+                            </colgroup>
+                            <thead>
+                                <tr >
+                                    <th id="Original-Object" width="70"></th>
+                                    <th id="Target-Device" width="180"></th>
+                                    <th id="Target-Object" width="180"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object0" ></div></td>
+                                    <td id="td_0"></td>
+                                    <td id="te_0" name="0"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object1" ></div></td>
+                                    <td id="td_1"></td>
+                                    <td id="te_1" name="1"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object2" ></div></td>
+                                    <td id="td_2"></td>
+                                    <td id="te_2" name="2"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object3" ></div></td>
+                                    <td id="td_3"></td>
+                                    <td id="te_3" name="3"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object4" ></div></td>
+                                    <td id="td_4"></td>
+                                    <td id="te_4" name="4"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object5" ></div></td>
+                                    <td id="td_5"></td>
+                                    <td id="te_5" name="5"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object6" ></div></td>
+                                    <td id="td_6"></td>
+                                    <td id="te_6" name="6"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object7" ></div></td>
+                                    <td id="td_7"></td>
+                                    <td id="te_7" name="7"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object8" ></div></td>
+                                    <td id="td_8"></td>
+                                    <td id="te_8" name="8"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object9" ></div></td>
+                                    <td id="td_9"></td>
+                                    <td id="te_9" name="9"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object10" ></div></td>
+                                    <td id="td_10"></td>
+                                    <td id="te_10" name="10"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object11" ></div></td>
+                                    <td id="td_11"></td>
+                                    <td id="te_11" name="11"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object12" ></div></td>
+                                    <td id="td_12"></td>
+                                    <td id="te_12" name="12"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object13" ></div></td>
+                                    <td id="td_13"></td>
+                                    <td id="te_13" name="13"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object14" ></div></td>
+                                    <td id="td_14"></td>
+                                    <td id="te_14" name="14"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object15" ></div></td>
+                                    <td id="td_15"></td>
+                                    <td id="te_15" name="15"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object16" ></div></td>
+                                    <td id="td_16"></td>
+                                    <td id="te_16" name="16"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object17" ></div></td>
+                                    <td id="td_17"></td>
+                                    <td id="te_17" name="17"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object18" ></div></td>
+                                    <td id="td_18"></td>
+                                    <td id="te_18" name="18"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object19" ></div></td>
+                                    <td id="td_19"></td>
+                                    <td id="te_19" name="19"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object20" ></div></td>
+                                    <td id="td_20"></td>
+                                    <td id="te_20" name="20"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object21" ></div></td>
+                                    <td id="td_21"></td>
+                                    <td id="te_21" name="21"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object22" ></div></td>
+                                    <td id="td_22"></td>
+                                    <td id="te_22" name="22"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex"><div id="object23" ></div></td>
+                                    <td id="td_23"></td>
+                                    <td id="te_23" name="23"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex"><div id="object24" ></div></td>
+                                    <td id="td_24"></td>
+                                    <td id="te_24" name="24"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex">Front-tilt</td>
+                                    <td id="td_25"></td>
+                                    <td id="te_25" name="25"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex">Back-tilt</td>
+                                    <td id="td_26"></td>
+                                    <td id="te_26" name="26"></td>
+                                </tr>
+                                <tr class="even">
+                                    <td class="mapIndex">Left-tilt</td>
+                                    <td id="td_27"></td>
+                                    <td id="te_27" name="27"></td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class="mapIndex">Right-tilt</td>
+                                    <td id="td_28"></td>
+                                    <td id="te_28" name="28"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style=" margin-top:3px;clear:both; ">
+                        <button id="ProfileEnable">Enable</button>
+                        <button id="ProfileSave">Save</button>
+                        <button id="ProfileOpen">Open</button>
+                        <button id="ProfileDefault">Default</button>
+                        <button id="ProfileImport" style="width:100px; ">Import</button>
+                        <button id="ProfileExport" style="width:100px;">Export</button>
+                    </div>
+                </div>
+            </div>
+            <div id="tds0" style="display:none;">
+                <select >
+                    <option value="0">NONE</option>
+                    <option value="1">Gamepad axis</option>
+                    <option value="2">Gamepad button</option>
+                    <option value="3">Keystrokes</option>
+                    <option value="4">Mouse axis</option>
+                    <option value="5">Mouse button</option>
+                </select>
+            </div>
+            <div id="tes0" class="teselect" style="display:none;">
+                <select >
+                    <option value="0x0">NONE</option>
+                </select></div>
+            <div id="tes1" class="teselect" style="display:none;">
+                <select >
+                    <option value="0x1">X Positive</option>
+                    <option value="0x11">X Negative</option>
+                    <option value="0x2">Y Positive</option>
+                    <option value="0x12">Y Negative</option>
+                    <option value="0x3">Z Positive</option>
+                    <option value="0x13">Z Negative</option>
+                    <option value="0x4">Rx Positive</option>
+                    <option value="0x14">Rx Negative</option>
+                    <option value="0x5">Ry Positive</option>
+                    <option value="0x15">Ry Negative</option>
+                    <option value="0x6">Rz Positive</option>
+                    <option value="0x16">Rz Negative</option>
+                    <option value="0x7">Dial Positive</option>
+                    <option value="0x17">Dial Negative</option>
+                    <option value="0x8">Slider Positive</option>
+                    <option value="0x18">Slider Negative</option>
+                </select>
+            </div>
+            <div id="tes2" class="teselect" style="display:none;">
+                <select >
+                    <option value="0x0">button 1</option>
+                    <option value="0x1">button 2</option>
+                    <option value="0x2">button 3</option>
+                    <option value="0x3">button 4</option>
+                    <option value="0x4">button 5</option>
+                    <option value="0x5">button 6</option>
+                    <option value="0x6">button 7</option>
+                    <option value="0x7">button 8</option>
+                    <option value="0x8">button 9</option>
+                    <option value="0x9">button 10</option>
+                    <option value="0xa">button 11</option>
+                    <option value="0xb">button 12</option>
+                    <option value="0xc">button 13</option>
+                    <option value="0xd">button 14</option>
+                    <option value="0xe">button 15</option>
+                    <option value="0xf">button 16</option>
+                    <option value="0x10">button 17</option>
+                    <option value="0x11">button 18</option>
+                    <option value="0x12">button 19</option>
+                    <option value="0x13">button 20</option>
+                    <option value="0x14">POV Up</option>
+                    <option value="0x15">POV Right</option>
+                    <option value="0x16">POV Down</option>
+                    <option value="0x17">POV Left</option>
+                </select>
+            </div>
+            <div id="tes3" class="teselect" style="display:none;">
+                <select >
+                    <option value="0x29">ESCAPE</option>
+                    <option value="0x3a">F1</option>
+                    <option value="0x3b">F2</option>
+                    <option value="0x3c">F3</option>
+                    <option value="0x3d">F4</option>
+                    <option value="0x3e">F5</option>
+                    <option value="0x3f">F6</option>
+                    <option value="0x40">F7</option>
+                    <option value="0x41">F8</option>
+                    <option value="0x42">F9</option>
+                    <option value="0x43">F10</option>
+                    <option value="0x44">F11</option>
+                    <option value="0x45">F12</option>
+                    <option value="0x35">` ~</option>
+                    <option value="0x1e">1</option>
+                    <option value="0x1f">2</option>
+                    <option value="0x20">3</option>
+                    <option value="0x21">4</option>
+                    <option value="0x22">5</option>
+                    <option value="0x23">6</option>
+                    <option value="0x24">7</option>
+                    <option value="0x25">8</option>
+                    <option value="0x26">9</option>
+                    <option value="0x27">0</option>
+                    <option value="0x2d">- _</option>
+                    <option value="0x2e">= +</option>
+                    <option value="0x31">\ |</option>
+                    <option value="0x2a">Backspace</option>
+                    <option value="0x2b">Tab</option>
+                    <option value="0x14">Q</option>
+                    <option value="0x1a">W</option>
+                    <option value="0x8">E</option>
+                    <option value="0x15">R</option>
+                    <option value="0x17">T</option>
+                    <option value="0x1c">Y</option>
+                    <option value="0x18">U</option>
+                    <option value="0xc">I</option>
+                    <option value="0x12">O</option>
+                    <option value="0x13">P</option>
+                    <option value="0x2f">[ {</option>
+                    <option value="0x30">] }</option>
+                    <option value="0x28">ENTER</option>
+                    <option value="0x39">Caps Lock</option>
+                    <option value="0x4">A</option>
+                    <option value="0x16">S</option>
+                    <option value="0x7">D</option>
+                    <option value="0x9">F</option>
+                    <option value="0xa">G</option>
+                    <option value="0xb">H</option>
+                    <option value="0xd">J</option>
+                    <option value="0xe">K</option>
+                    <option value="0xf">L</option>
+                    <option value="0x33">; :</option>
+                    <option value="0x34">' "</option>
+                    <option value="0xe1">Left Shift</option>
+                    <option value="0x1d">Z</option>
+                    <option value="0x1b">X</option>
+                    <option value="0x6">C</option>
+                    <option value="0x19">V</option>
+                    <option value="0x5">B</option>
+                    <option value="0x11">N</option>
+                    <option value="0x10">M</option>
+                    <option value="0x36">, <</option>
+                    <option value="0x37">. ></option>
+                    <option value="0x38">/ ?</option>
+                    <option value="0xe5">Right Shift</option>
+                    <option value="0xe0">Left Ctrl</option>
+                    <option value="0xe3">Left Win</option>
+                    <option value="0xe2">Left Alt</option>
+                    <option value="0x2c">SPACE</option>
+                    <option value="0xe6">Right Alt</option>
+                    <option value="0xe7">Right Win</option>
+                    <option value="0xe4">Right Ctrl</option>
+                    <option value="0x49">Insert</option>
+                    <option value="0x4a">Home</option>
+                    <option value="0x4b">Page Up</option>
+                    <option value="0x4c">Delete</option>
+                    <option value="0x4d">End</option>
+                    <option value="0x4e">Page Down</option>
+                    <option value="0x52">Up Arrow</option>
+                    <option value="0x4f">Right Arrow</option>
+                    <option value="0x51">Down Arrow</option>
+                    <option value="0x50">Left Arrow</option>
+                    <option value="0x46">Print Screen</option>
+                    <option value="0x47">Scroll Lock</option>
+                    <option value="0x48">Pause Break</option>
+                    <option value="0x53">Keypad Num Lock</option>
+                    <option value="0x54">Keypad /</option>
+                    <option value="0x55">Keypad *</option>
+                    <option value="0x56">Keypad -</option>
+                    <option value="0x5f">Keypad 7</option>
+                    <option value="0x60">Keypad 8</option>
+                    <option value="0x61">Keypad 9</option>
+                    <option value="0x57">Keypad +</option>
+                    <option value="0x5c">Keypad 4</option>
+                    <option value="0x5d">Keypad 5</option>
+                    <option value="0x5e">Keypad 6</option>
+                    <option value="0x59">Keypad 1</option>
+                    <option value="0x5a">Keypad 2</option>
+                    <option value="0x5b">Keypad 3</option>
+                    <option value="0x58">Keypad Enter</option>
+                    <option value="0x62">Keypad 0</option>
+                    <option value="0x63">Keypad . Delete</option>
+                </select>
+            </div>
+            <div id="tes4" class="teselect" style="display:none;">
+                <select >
+                    <option value="0x11">Left</option>
+                    <option value="0x1">Right</option>
+                    <option value="0x12">Up</option>
+                    <option value="0x2">Down</option>
+                    <option value="0x3">Wheel Up</option>
+                    <option value="0x13">Wheel Down</option>
+                </select>
+            </div>
+            <div id="tes5" class="teselect" style="display:none;">
+                <select >
+                    <option value="0x0">Left Button</option>
+                    <option value="0x1">Right Button</option>
+                    <option value="0x2">Middle Button</option>
+                </select>
+            </div>
+            <div id="tes6" class="teselect" style="display:none;">
+                <select >
+                    <option>6</option>
+                </select>
+            </div>
+            <div id="SaveDialog" title="Save profile" style="display:none;">
+                <p><label for="ProfileName">Name</label><input style="width:150px;" id="ProfileName" type="text"/></p>
+                <p><label>Saved profile</label></p>
+                <p><select id="ProfileSavedList" class="ProfileList" size="5"><option value="0">No PC Game Profie</option></select></p>
+                <p><button id="ProfileSaveOk">Save</button><button id="ProfileSaveCancel">Cancel</button><button id="ProfileSaveDel">Delete</button></p>
+            </div>
+            <div id="OpenDialog" title="Saved profile" style="display:none;">
+                <p><select id="OpenPList" class="ProfileList" size="5"><option value="0">No PC Game Profie</option></select></p>
+                <p><button id="ProfileSelectOk">OK</button></p>
+            </div>
+            <div id="keyboard" title="Select one key" style="display:none;">
+                <div id="row0">
+                    <button id="Esc" value="0x29" ></button>
+                    <button id="F1" value="0x3a" ></button>
+                    <button id="F2" value="0x3b" ></button>
+                    <button id="F3" value="0x3c" ></button>
+                    <button id="F4" value="0x3d" ></button>
+                    <button id="F5" value="0x3e" ></button>
+                    <button id="F6" value="0x3f" ></button>
+                    <button id="F7" value="0x40" ></button>
+                    <button id="F8" value="0x41" ></button>
+                    <button id="F9" value="0x42" ></button>
+                    <button id="F10" value="0x43" ></button>
+                    <button id="F11" value="0x44" ></button>
+                    <button id="F12" value="0x45" ></button>
+                    <button id="PrintScreen" value="0x46" ></button>
+                    <button id="ScrollLock" value="0x47" ></button>
+                    <button id="Pause" value="0x48" ></button>
+                </div>
+                <div id="row1" >
+                    <button id="accent" value="0x35" ></button>
+                    <button id="d1" value="0x1e" ></button>
+                    <button id="d2" value="0x1f" ></button>
+                    <button id="d3" value="0x20" ></button>
+                    <button id="d4" value="0x21" ></button>
+                    <button id="d5" value="0x22" ></button>
+                    <button id="d6" value="0x23" ></button>
+                    <button id="d7" value="0x24" ></button>
+                    <button id="d8" value="0x25" ></button>
+                    <button id="d9" value="0x26" ></button>
+                    <button id="d0" value="0x27" ></button>
+                    <button id="-" value="0x2d" ></button>
+                    <button id="=" value="0x2e" ></button>
+                    <button id="|" value="0x31" ></button>
+                    <button id="backspace" value="0x2a"></button>
+                    <button id="insert" value="0x49"></button>
+                    <button id="home" value="0x4a"  ></button>
+                    <button id="PageUp" value="0x4b" style="margin-right:12px; "></button>
+                    <button id="Numlock" value="0x53" ></button>
+                    <button id="keypad/" value="0x54" ></button>
+                    <button id="keypad*" value="0x55" ></button>
+                    <button id="keypad-" value="0x56" ></button>
+                </div>
+                <div style="float:left; ">
+                    <div id="row2">
+                        <button id="tab" value="0x2b" ></button>
+                        <button id="Q" value="0x14" ></button>
+                        <button id="W" value="0x1a" ></button>
+                        <button id="E" value="0x8" ></button>
+                        <button id="R" value="0x15" ></button>
+                        <button id="T" value="0x17" ></button>
+                        <button id="Y" value="0x1c" ></button>
+                        <button id="U" value="0x18" ></button>
+                        <button id="I" value="0xc" ></button>
+                        <button id="O" value="0x12" ></button>
+                        <button id="P" value="0x13" ></button>
+                        <button id="[{" value="0x2f" ></button>
+                        <button id="]}" value="0x30" ></button>
+                        <button id="Enter" value="0x28" style="width:53px;margin-right:12px ;" ></button>
+                        <button id="Delete" value="0x4c""></button>
+                        <button id="End" value="0x4d"></button>
+                        <button id="PageDown" value="0x4e" style="margin-right:12px ;"></button>
+                        <button id="keypad7" value="0x5f"></button>
+                        <button id="keypad8" value="0x60"></button>
+                        <button id="keypad9" value="0x61"></button>
+                    </div>
+                    <div id="row3">
+                        <button id="CapsLock" type="button" value="0x39" ></button>
+                        <button id="A" value="0x4"></button>
+                        <button id="S" value="0x16"></button>
+                        <button id="D" value="0x7"></button>
+                        <button id="F" value="0x9"></button>
+                        <button id="G" value="0xa"></button>
+                        <button id="H" value="0xb"></button>
+                        <button id="J" value="0xd"></button>
+                        <button id="K" value="0xe"></button>
+                        <button id="L" value="0xf"></button>
+                        <button id=";:" value="0x33"></button>
+                        <button id="'&quot;" value="0x34"></button>
+                        <button id="Enter" value="0x28" style="margin-right:122px"></button>
+                        <button id="keypad4" value="0x5c"></button>
+                        <button id="keypad5" value="0x5d"></button>
+                        <button id="keypad6" value="0x5e"></button>
+
+                    </div>
+                </div>
+                <button id="keypad+" value="0x57" style="height:62px;" ></button>
+
+                <div style="float:left; ">
+                    <div id="row4">
+                        <button id="lShift" value="0xe1"></button>
+                        <button id="Z" type="button" value="0x1d"></button>
+                        <button id="X" type="button" value="0x1b"></button>
+                        <button id="C" type="button" value="0x6"></button>
+                        <button id="V" type="button" value="0x19"></button>
+                        <button id="B" type="button" value="0x5"></button>
+                        <button id="N" type="button" value="0x11"></button>
+                        <button id="M" type="button" value="0x10"></button>
+                        <button id="lt" type="button" value="0x36"></button>
+                        <button id="gt" type="button" value="0x37"></button>
+                        <button id="/?" type="button" value="0x38"></button>
+                        <button id="rShift" value="0xe5" style="margin-right:76px "></button>
+                        <button id="up" type="button" value="0x52" style="margin-right:44px "></button>
+                        <button id="keypad1" value="0x59"></button>
+                        <button id="keypad2" value="0x5a"></button>
+                        <button id="keypad3" value="0x5b"></button>
+                    </div>
+                    <div id="row5">
+                        <button id="lCtrl" value="0xe0"></button>
+                        <button id="lWin"value="0xe3"></button>
+                        <button id="lAlt" value="0xe2"></button>
+                        <button id="spacebar" value="0x2c"></button>
+                        <button id="rAlt" value="0xe6"></button>
+                        <button id="rWin" value="0xe7"></button>
+                        <button id="rCtrl" value="0xe4" style="margin-right:10px " ></button>
+                        <button id="left" type="button" value="0x50"></button>
+                        <button id="down" type="button" value="0x51"></button>
+                        <button id="right" type="button" value="0x4f" style="margin-right:10px"></button>
+                        <button id="keypad0" value="0x62" style="width:62px; " ></button>
+                        <button id="keypadDel" value="0x63" ></button>
+                    </div>
+                </div>
+                <button id="keypadEnter" value="0x58" style="height:60px; "></button>
+            </div>
+        </div>
+    </body>
+</html>  

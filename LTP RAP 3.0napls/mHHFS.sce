@@ -5,7 +5,7 @@
 #and resets any of the default settings if desired.*/
 
 # the name of the scenario/experiment
-scenario = "Horizontal Visual LTP Intermediate High Frequency Stimulation v3.1";
+scenario = "Horizontal Visual LTP Intermediate High Frequency Stimulation v4.0 (35% contrast)";
 # the type of scenario: if not fMRI-based this will be 'trials'
 scenario_type = trials;
 
@@ -91,31 +91,10 @@ trial {
 
 # you must enter the location and name of each of the stimuli to be
 # used in the experiment
-bitmap {filename = "R180five.png";} C0;
-bitmap {filename = "R180ifive.png";} C0i;
-bitmap {filename = "R180five.png";} C0t;
-bitmap {filename = "R180ifive.png";} C0ti;
-
-line_graphic {
-   coordinates = -480, -540, -480, 540;
-   line_width = 6;
-	fill_color=128,128,128;
-}lineLeft;
-line_graphic {
-   coordinates = 480, -540, 480, 540;
-   line_width = 6;
-	fill_color=128,128,128;
-}lineRight;
-line_graphic {
-   coordinates = -960, 270, 960, 270;
-   line_width = 6;
-	fill_color=128,128,128;
-}lineTop;
-line_graphic {
-   coordinates = -960, -270, 960, -270;
-   line_width = 6;
-	fill_color=128,128,128;
-}lineBottom;
+bitmap {filename = "pix6con0.35o180.png";} C0;
+bitmap {filename = "pix6con0.35o180i.png";} C0i;
+bitmap {filename = "pix6con0.72o180.png";} C0t;
+bitmap {filename = "pix6con0.72o180i.png";} C0ti;
 
 #sn is normal stim
 picture {
@@ -130,8 +109,6 @@ picture {
             #text {caption = "+";
 		#		font_size = 72;
 		#		font_color = 255,0,0;}; # fixation cross
-      line_graphic lineTop;
-      x = 0; y = 0; # centre of screen
 }tn;
 
 #si is inverted stim
@@ -147,8 +124,6 @@ picture {
 		#text {caption = "+";
 		#		font_size = 72;
 		#		font_color = 255,0,0;}; # fixation cross
-      line_graphic lineBottom;
-      x = 0; y = 0; # centre of screen
 }ti;
 
 #set the trial parameters
@@ -156,7 +131,7 @@ trial {
 	trial_duration = 99;
 	stimulus_event {
 			picture sn; # picture to present
-			duration = 20;
+			duration = 29;
 			time = 0;
 			code = "sn180"; # stimulus name
 			port_code = 1; #trigger value 
@@ -168,7 +143,7 @@ trial {
 	trial_duration = 99;
 	stimulus_event {
 			picture si; # picture to present
-			duration = 20;
+			duration = 29;
 			time = 0;
 			code = "si180"; # stimulus name
 			port_code = 11; #trigger value 
@@ -181,7 +156,7 @@ trial {
 	stimulus_event {
 			picture tn; # picture to present
 			target_button = 2;
-			duration = 20;
+			duration = 29;
 			time = 0;
 			code = "tn180"; # stimulus name
 			port_code = 2; #trigger value 
@@ -194,7 +169,7 @@ trial {
 	stimulus_event {
 			picture ti; # picture to present
 			target_button = 2;
-			duration = 20;
+			duration = 29;
 			time = 0;
 			code = "ti180"; # stimulus name
 			port_code = 22; #trigger value 
@@ -204,7 +179,7 @@ trial {
 
 #intermittent blank screen trial
 trial {
-	trial_duration = 5000; #5s of blank screen
+	trial_duration = 4995; #5s of blank screen
 	stimulus_event {
 			picture {
 			bitmap def;
