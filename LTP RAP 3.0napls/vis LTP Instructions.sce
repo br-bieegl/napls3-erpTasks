@@ -297,6 +297,7 @@ trial{
    duration = next_picture;  
 };   
 
+
 ##########
 #blinking#
 ##########  
@@ -397,6 +398,696 @@ trial{
    time = 0;
    duration = next_picture;  
 };  
+
+
+
+#########################
+#HFS Target Instructions#
+#########################
+trial{
+   #all_responses = true;
+   trial_duration = 5000;
+   #trial_type = first_response;
+   
+   picture{
+      text{
+         font_size = 24;
+         caption = "In one part of the task 
+the pictures will flash quickly, like this:";};  
+         x = 0; y = 0;};  
+   duration = 5000;
+   time = 0;
+
+};
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+
+trial{
+   #all_responses = true;
+   trial_duration = 5000;
+   #trial_type = first_response;
+   
+   picture{
+      text{
+         font_size = 24;
+         caption = "You will still need to
+respond to the bold patterns:";};  
+         x = 0; y = 0;};  
+   duration = 5000;
+   time = 0;
+
+};
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap T135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 97;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R135i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+
+trial{
+   #all_responses = true;
+   trial_duration = 5000;
+   #trial_type = first_response;
+   
+   picture{
+      text{
+         font_size = 24;
+         caption = "They are not always easy to see.
+Here is another example with two bold images:";};  
+         x = 0; y = 0;};  
+   duration = 5000;
+   time = 0;
+
+};
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap T45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 97;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap T45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 97;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45;
+      x = 0; y = 0;
+      };   
+   time = 0;
+   duration = 27;  
+   code = "50";
+}; 
+
+trial{      
+   trial_duration = 99;
+   picture{
+      bitmap R45i;
+      x = 0; y = 0;
+      };
+   time = 0;
+   duration = 27;  
+   code = "50i";
+}; 
+
+##############
+#No sleeping!#
+##############
 
 trial{
   # all_responses = true;

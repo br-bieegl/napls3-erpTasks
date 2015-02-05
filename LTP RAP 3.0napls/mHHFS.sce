@@ -156,7 +156,7 @@ trial {
 	stimulus_event {
 			picture tn; # picture to present
 			target_button = 2;
-			duration = 29;
+			duration = 98;
 			time = 0;
 			code = "tn180"; # stimulus name
 			port_code = 2; #trigger value 
@@ -169,7 +169,7 @@ trial {
 	stimulus_event {
 			picture ti; # picture to present
 			target_button = 2;
-			duration = 29;
+			duration = 98;
 			time = 0;
 			code = "ti180"; # stimulus name
 			port_code = 22; #trigger value 
